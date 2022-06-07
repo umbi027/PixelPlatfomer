@@ -21,7 +21,9 @@ _global_script_class_icons={
 [application]
 
 config/name="PixelPlatfomer"
-config/icon="res://icon.png"
+boot_splash/image="res://Resource/png/ico.png"
+boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
+config/icon="res://Resource/png/ico.png"
 
 [gdnative]
 
