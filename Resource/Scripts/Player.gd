@@ -9,8 +9,10 @@ const JUMP_FORCE = 128
 
 onready var sprite = $Sprite
 onready var animation_player = $AnimationPlayer
+onready var coinValText = get_tree().get_root().get_node("World/Control/CoinGained")
 
 var motion = Vector2.ZERO
+var coinCollted = 0
 
 
 func _physics_process(delta):
@@ -43,3 +45,7 @@ func _physics_process(delta):
 
 	
 	motion = move_and_slide(motion, Vector2.UP)
+
+func add_coin():
+	coinCollted += 1
+	coinValText.text = str(coinCollted)
